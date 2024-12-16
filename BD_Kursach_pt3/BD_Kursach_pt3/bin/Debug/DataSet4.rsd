@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet4">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Sections'[Dim Section ID], 'Dim Sections'[Name], 'Dim Sections'[Chairman], 'Dim Sections'[Sequence Number])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Sections</DimensionName>
+                    <HierarchyName>Dim Section ID</HierarchyName>
+                    <HierarchyUniqueName>[Dim Sections].[Dim Section ID]</HierarchyUniqueName>
+                    <LevelName>Dim Section ID</LevelName>
+                    <UniqueName>[Dim Sections].[Dim Section ID].[Dim Section ID]</UniqueName>
+                  </ID>
+                  <ItemCaption>Dim Section ID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Sections</DimensionName>
+                    <HierarchyName>Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Sections].[Name]</HierarchyUniqueName>
+                    <LevelName>Name</LevelName>
+                    <UniqueName>[Dim Sections].[Name].[Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Sections</DimensionName>
+                    <HierarchyName>Chairman</HierarchyName>
+                    <HierarchyUniqueName>[Dim Sections].[Chairman]</HierarchyUniqueName>
+                    <LevelName>Chairman</LevelName>
+                    <UniqueName>[Dim Sections].[Chairman].[Chairman]</UniqueName>
+                  </ID>
+                  <ItemCaption>Chairman</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Sections</DimensionName>
+                    <HierarchyName>Sequence Number</HierarchyName>
+                    <HierarchyUniqueName>[Dim Sections].[Sequence Number]</HierarchyUniqueName>
+                    <LevelName>Sequence Number</LevelName>
+                    <UniqueName>[Dim Sections].[Sequence Number].[Sequence Number]</UniqueName>
+                  </ID>
+                  <ItemCaption>Sequence Number</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Conference DW</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Sections'[Dim Section ID], 'Dim Sections'[Name], 'Dim Sections'[Chairman], 'Dim Sections'[Sequence Number])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Dim_Section_ID">
+        <DataField>Dim Sections[Dim Section ID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Dim Sections[Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Chairman">
+        <DataField>Dim Sections[Chairman]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Sequence_Number">
+        <DataField>Dim Sections[Sequence Number]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

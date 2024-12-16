@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet3">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Speakers'[Dim Speaker ID], 'Dim Speakers'[Full Name], 'Dim Speakers'[Position], 'Fact Presentations'[Fact Presentation ID], 'Fact Presentations'[Topic], 'Fact Presentations'[Duration])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Speakers</DimensionName>
+                    <HierarchyName>Dim Speaker ID</HierarchyName>
+                    <HierarchyUniqueName>[Dim Speakers].[Dim Speaker ID]</HierarchyUniqueName>
+                    <LevelName>Dim Speaker ID</LevelName>
+                    <UniqueName>[Dim Speakers].[Dim Speaker ID].[Dim Speaker ID]</UniqueName>
+                  </ID>
+                  <ItemCaption>Dim Speaker ID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Speakers</DimensionName>
+                    <HierarchyName>Full Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Speakers].[Full Name]</HierarchyUniqueName>
+                    <LevelName>Full Name</LevelName>
+                    <UniqueName>[Dim Speakers].[Full Name].[Full Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Full Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Speakers</DimensionName>
+                    <HierarchyName>Position</HierarchyName>
+                    <HierarchyUniqueName>[Dim Speakers].[Position]</HierarchyUniqueName>
+                    <LevelName>Position</LevelName>
+                    <UniqueName>[Dim Speakers].[Position].[Position]</UniqueName>
+                  </ID>
+                  <ItemCaption>Position</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Fact Presentations</DimensionName>
+                    <HierarchyName>Fact Presentation ID</HierarchyName>
+                    <HierarchyUniqueName>[Fact Presentations].[Fact Presentation ID]</HierarchyUniqueName>
+                    <LevelName>Fact Presentation ID</LevelName>
+                    <UniqueName>[Fact Presentations].[Fact Presentation ID].[Fact Presentation ID]</UniqueName>
+                  </ID>
+                  <ItemCaption>Fact Presentation ID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Fact Presentations</DimensionName>
+                    <HierarchyName>Topic</HierarchyName>
+                    <HierarchyUniqueName>[Fact Presentations].[Topic]</HierarchyUniqueName>
+                    <LevelName>Topic</LevelName>
+                    <UniqueName>[Fact Presentations].[Topic].[Topic]</UniqueName>
+                  </ID>
+                  <ItemCaption>Topic</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Fact Presentations</DimensionName>
+                    <HierarchyName>Duration</HierarchyName>
+                    <HierarchyUniqueName>[Fact Presentations].[Duration]</HierarchyUniqueName>
+                    <LevelName>Duration</LevelName>
+                    <UniqueName>[Fact Presentations].[Duration].[Duration]</UniqueName>
+                  </ID>
+                  <ItemCaption>Duration</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Conference DW</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Speakers'[Dim Speaker ID], 'Dim Speakers'[Full Name], 'Dim Speakers'[Position], 'Fact Presentations'[Fact Presentation ID], 'Fact Presentations'[Topic], 'Fact Presentations'[Duration])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Dim_Speaker_ID">
+        <DataField>Dim Speakers[Dim Speaker ID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Full_Name">
+        <DataField>Dim Speakers[Full Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Position">
+        <DataField>Dim Speakers[Position]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Fact_Presentation_ID">
+        <DataField>Fact Presentations[Fact Presentation ID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Topic">
+        <DataField>Fact Presentations[Topic]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Duration">
+        <DataField>Fact Presentations[Duration]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

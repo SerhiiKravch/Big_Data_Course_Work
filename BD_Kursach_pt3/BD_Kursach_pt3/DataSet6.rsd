@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet6">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Fact Presentations'[Fact Presentation ID], 'Fact Presentations'[Topic], 'Fact Presentations'[Duration], 'Dim Time'[Dim Time ID], 'Dim Time'[Date], 'Dim Time'[Year], 'Dim Time'[Month], 'Dim Time'[Day], 'Dim Time'[Hour], 'Dim Time'[Minute], FILTER(VALUES('Fact Presentations'[Topic]), ('Fact Presentations'[Topic] = " Cultural Diversity in Tech Product Design")))</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Fact Presentations</DimensionName>
+                    <HierarchyName>Fact Presentation ID</HierarchyName>
+                    <HierarchyUniqueName>[Fact Presentations].[Fact Presentation ID]</HierarchyUniqueName>
+                    <LevelName>Fact Presentation ID</LevelName>
+                    <UniqueName>[Fact Presentations].[Fact Presentation ID].[Fact Presentation ID]</UniqueName>
+                  </ID>
+                  <ItemCaption>Fact Presentation ID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Fact Presentations</DimensionName>
+                    <HierarchyName>Topic</HierarchyName>
+                    <HierarchyUniqueName>[Fact Presentations].[Topic]</HierarchyUniqueName>
+                    <LevelName>Topic</LevelName>
+                    <UniqueName>[Fact Presentations].[Topic].[Topic]</UniqueName>
+                  </ID>
+                  <ItemCaption>Topic</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Fact Presentations</DimensionName>
+                    <HierarchyName>Duration</HierarchyName>
+                    <HierarchyUniqueName>[Fact Presentations].[Duration]</HierarchyUniqueName>
+                    <LevelName>Duration</LevelName>
+                    <UniqueName>[Fact Presentations].[Duration].[Duration]</UniqueName>
+                  </ID>
+                  <ItemCaption>Duration</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Time</DimensionName>
+                    <HierarchyName>Dim Time ID</HierarchyName>
+                    <HierarchyUniqueName>[Dim Time].[Dim Time ID]</HierarchyUniqueName>
+                    <LevelName>Dim Time ID</LevelName>
+                    <UniqueName>[Dim Time].[Dim Time ID].[Dim Time ID]</UniqueName>
+                  </ID>
+                  <ItemCaption>Dim Time ID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Time</DimensionName>
+                    <HierarchyName>Hierarchy</HierarchyName>
+                    <HierarchyUniqueName>[Dim Time].[Hierarchy]</HierarchyUniqueName>
+                    <LevelName>Date</LevelName>
+                    <UniqueName>[Dim Time].[Hierarchy].[Date]</UniqueName>
+                  </ID>
+                  <ItemCaption>Date</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Time</DimensionName>
+                    <HierarchyName>Hierarchy</HierarchyName>
+                    <HierarchyUniqueName>[Dim Time].[Hierarchy]</HierarchyUniqueName>
+                    <LevelName>Year</LevelName>
+                    <UniqueName>[Dim Time].[Hierarchy].[Year]</UniqueName>
+                  </ID>
+                  <ItemCaption>Year</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Time</DimensionName>
+                    <HierarchyName>Hierarchy</HierarchyName>
+                    <HierarchyUniqueName>[Dim Time].[Hierarchy]</HierarchyUniqueName>
+                    <LevelName>Month</LevelName>
+                    <UniqueName>[Dim Time].[Hierarchy].[Month]</UniqueName>
+                  </ID>
+                  <ItemCaption>Month</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Time</DimensionName>
+                    <HierarchyName>Hierarchy</HierarchyName>
+                    <HierarchyUniqueName>[Dim Time].[Hierarchy]</HierarchyUniqueName>
+                    <LevelName>Day</LevelName>
+                    <UniqueName>[Dim Time].[Hierarchy].[Day]</UniqueName>
+                  </ID>
+                  <ItemCaption>Day</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Time</DimensionName>
+                    <HierarchyName>Hierarchy</HierarchyName>
+                    <HierarchyUniqueName>[Dim Time].[Hierarchy]</HierarchyUniqueName>
+                    <LevelName>Hour</LevelName>
+                    <UniqueName>[Dim Time].[Hierarchy].[Hour]</UniqueName>
+                  </ID>
+                  <ItemCaption>Hour</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Time</DimensionName>
+                    <HierarchyName>Hierarchy</HierarchyName>
+                    <HierarchyUniqueName>[Dim Time].[Hierarchy]</HierarchyUniqueName>
+                    <LevelName>Minute</LevelName>
+                    <UniqueName>[Dim Time].[Hierarchy].[Minute]</UniqueName>
+                  </ID>
+                  <ItemCaption>Minute</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Conference DW</From>
+            <Filter>
+              <FilterItems>
+                <FilterItem>
+                  <HierarchyUniqueName>[Fact Presentations].[Topic]</HierarchyUniqueName>
+                  <Condition xsi:type="EqualTo">
+                    <Members>
+                      <Member>
+                        <MemberUniqueName>[Fact Presentations].[Topic].&amp;[ Cultural Diversity in Tech Product Design]</MemberUniqueName>
+                      </Member>
+                    </Members>
+                  </Condition>
+                </FilterItem>
+              </FilterItems>
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Fact Presentations'[Fact Presentation ID], 'Fact Presentations'[Topic], 'Fact Presentations'[Duration], 'Dim Time'[Dim Time ID], 'Dim Time'[Date], 'Dim Time'[Year], 'Dim Time'[Month], 'Dim Time'[Day], 'Dim Time'[Hour], 'Dim Time'[Minute], FILTER(VALUES('Fact Presentations'[Topic]), ('Fact Presentations'[Topic] = " Cultural Diversity in Tech Product Design")))</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Fact_Presentation_ID">
+        <DataField>Fact Presentations[Fact Presentation ID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Topic">
+        <DataField>Fact Presentations[Topic]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Duration">
+        <DataField>Fact Presentations[Duration]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Dim_Time_ID">
+        <DataField>Dim Time[Dim Time ID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Date">
+        <DataField>Dim Time[Date]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Year">
+        <DataField>Dim Time[Year]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Month">
+        <DataField>Dim Time[Month]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Day">
+        <DataField>Dim Time[Day]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Hour">
+        <DataField>Dim Time[Hour]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Minute">
+        <DataField>Dim Time[Minute]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

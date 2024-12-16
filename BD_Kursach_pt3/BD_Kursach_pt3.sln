@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "BD_Kursach_pt3", "BD_Kursach_pt3\BD_Kursach_pt3.rptproj", "{C6F93380-D9B7-4B1E-911A-5C465D4883DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6F93380-D9B7-4B1E-911A-5C465D4883DC}.Debug|Default.ActiveCfg = Debug
+		{C6F93380-D9B7-4B1E-911A-5C465D4883DC}.Debug|Default.Build.0 = Debug
+		{C6F93380-D9B7-4B1E-911A-5C465D4883DC}.Debug|Default.Deploy.0 = Debug
+		{C6F93380-D9B7-4B1E-911A-5C465D4883DC}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{C6F93380-D9B7-4B1E-911A-5C465D4883DC}.DebugLocal|Default.Build.0 = DebugLocal
+		{C6F93380-D9B7-4B1E-911A-5C465D4883DC}.Release|Default.ActiveCfg = Release
+		{C6F93380-D9B7-4B1E-911A-5C465D4883DC}.Release|Default.Build.0 = Release
+		{C6F93380-D9B7-4B1E-911A-5C465D4883DC}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F8FFEB6-A923-4B37-BA07-E2FDBE5C8780}
+	EndGlobalSection
+EndGlobal

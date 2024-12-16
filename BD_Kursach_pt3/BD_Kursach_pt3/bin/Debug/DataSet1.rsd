@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Conferences'[Dim Conference ID], 'Dim Conferences'[Name], 'Dim Conferences'[Start Date], 'Dim Conferences'[End Date], 'Dim Conferences'[Building])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Conferences</DimensionName>
+                    <HierarchyName>Dim Conference ID</HierarchyName>
+                    <HierarchyUniqueName>[Dim Conferences].[Dim Conference ID]</HierarchyUniqueName>
+                    <LevelName>Dim Conference ID</LevelName>
+                    <UniqueName>[Dim Conferences].[Dim Conference ID].[Dim Conference ID]</UniqueName>
+                  </ID>
+                  <ItemCaption>Dim Conference ID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Conferences</DimensionName>
+                    <HierarchyName>Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Conferences].[Name]</HierarchyUniqueName>
+                    <LevelName>Name</LevelName>
+                    <UniqueName>[Dim Conferences].[Name].[Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Conferences</DimensionName>
+                    <HierarchyName>Start Date</HierarchyName>
+                    <HierarchyUniqueName>[Dim Conferences].[Start Date]</HierarchyUniqueName>
+                    <LevelName>Start Date</LevelName>
+                    <UniqueName>[Dim Conferences].[Start Date].[Start Date]</UniqueName>
+                  </ID>
+                  <ItemCaption>Start Date</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Conferences</DimensionName>
+                    <HierarchyName>End Date</HierarchyName>
+                    <HierarchyUniqueName>[Dim Conferences].[End Date]</HierarchyUniqueName>
+                    <LevelName>End Date</LevelName>
+                    <UniqueName>[Dim Conferences].[End Date].[End Date]</UniqueName>
+                  </ID>
+                  <ItemCaption>End Date</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Conferences</DimensionName>
+                    <HierarchyName>Building</HierarchyName>
+                    <HierarchyUniqueName>[Dim Conferences].[Building]</HierarchyUniqueName>
+                    <LevelName>Building</LevelName>
+                    <UniqueName>[Dim Conferences].[Building].[Building]</UniqueName>
+                  </ID>
+                  <ItemCaption>Building</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Conference DW</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Conferences'[Dim Conference ID], 'Dim Conferences'[Name], 'Dim Conferences'[Start Date], 'Dim Conferences'[End Date], 'Dim Conferences'[Building])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Dim_Conference_ID">
+        <DataField>Dim Conferences[Dim Conference ID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Dim Conferences[Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Start_Date">
+        <DataField>Dim Conferences[Start Date]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="End_Date">
+        <DataField>Dim Conferences[End Date]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Building">
+        <DataField>Dim Conferences[Building]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
